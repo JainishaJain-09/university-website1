@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(120deg, #1d3557, #457b9d);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  border-bottom: 4px solid #f1c40f;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #1d3557;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Section */
+.specializations {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.specializations h2 {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin-bottom: 30px;
+}
+
+
+.specialization-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.specialization-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialization-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.specialization-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.specialization-card img:hover {
+  transform: scale(1.15);
+}
+
+.specialization-card h3 {
+  font-size: 1.3rem;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.specialization-card p {
+  font-size: 1rem;
+  color: #555;
+}

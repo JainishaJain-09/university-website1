@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="../css/Register.css">
+</head>
+
+<body>
+    <form onsubmit="alert('Registration successful!'); return false;">
+        <div class="main-panel">
+            <h1>Student Registration Form</h1>
+
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Student Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Mobile No.</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Id</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Father Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Mother Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Select Course</label>
+                    <select required>
+                        <option value="">--Select--</option>
+                        <optgroup label="Undergraduate (UG) Courses">
+                            <option>B.Tech (Computer Science Engineering)</option>
+                            <option>B.Tech (Electronics & Communication Engineering)</option>
+                            <option>BCA</option>
+                            <option>BBA</option>
+                        </optgroup>
+                        <optgroup label="Postgraduate (PG) Courses">
+                            <option>M.Tech</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Date Of Birth</label>
+                    <input type="date" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div>
+                        <input type="radio" name="gender" required> Male
+                        <input type="radio" name="gender" required> Female
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Student Photo</label>
+                    <input type="file" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Select Branch</label>
+                    <div>
+                        <input type="checkbox"> CSE
+                        <input type="checkbox"> IT
+                        <input type="checkbox"> ECE
+                        <input type="checkbox"> Civil
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea style="height:110px;"></textarea>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

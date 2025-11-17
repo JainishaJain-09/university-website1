@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Chitkara University</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: url("../media/back1.avif") no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+    .contact {
+      width: 90%;
+      max-width: 1100px;
+      padding: 40px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease;
+     
+    }
+    .contact .content {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact .content h2 {
+      font-size: 40px;
+      color: rgb(231, 227, 227);
+      
+    }
+    .contact .content p {
+      color: #F5F5F5;
+      font-size: 16px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .contactInfo {
+      width: 45%;
+      color: #fff;
+    }
+    .contactInfo .box {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+    .contactInfo .box:hover {
+      transform: translateX(10px);
+    }
+    .contactInfo .icon {
+      min-width: 45px;  
+      height: 45px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;  
+      color: #0066CC;
+      
+    }
+    .contactInfo .text {
+      margin-left: 20px;
+    }
+    .contactInfo .text h3 {
+      color: #0066CC;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .contactInfo .text p {
+      color: #ddd;
+      font-size: 15px;
+    }
+    .map {
+      margin-top: 20px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    }
+    .contactForm {
+      width: 40%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .contactForm h2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .contactForm .inputBox {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .contactForm .inputBox input,
+    .contactForm .inputBox select,
+    .contactForm .inputBox textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #333;
+      font-size: 16px;
+      outline: none;
+      resize: none;
+      background: transparent;
+    }
+    .contactForm .inputBox span {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-size: 16px;
+      color: #666;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+    .contactForm .inputBox input:focus ~ span,
+    .contactForm .inputBox input:valid ~ span,
+    .contactForm .inputBox textarea:focus ~ span,
+    .contactForm .inputBox textarea:valid ~ span,
+    .contactForm .inputBox select:focus ~ span,
+    .contactForm .inputBox select:valid ~ span {
+      transform: translateY(-20px);
+      font-size: 12px;
+      color: #0066CC;
+    }
+    .contactForm .inputBox input[type="submit"] {
+      background: #0066CC;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+    .contactForm .inputBox input[type="submit"]:hover {
+      background: #004c99;
+      box-shadow: 0 5px 15px rgba(0,102,204,0.6);
+    }
+    @media (max-width: 991px) {
+      .container {
+        flex-direction: column;
+      }
+      .contactInfo, .contactForm {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #0066CC; }
+      to { text-shadow: 0 0 20px #0066CC, 0 0 30px #0066CC; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Reach out for any queries, feedback, or support.</p>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>Chandigarh–Patiala National Highway,<br>Rajpura, Punjab 140401,<br>India</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>+91 1762 507084</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>chitkara@chitkara.edu.in</p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.341887493746!2d76.65720197458882!3d30.516086900605364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fecf13e0dd06d%3A0xe827bc3c15283a7d!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1693121234567!5m2!1sen!2sin" 
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="contactForm">
+        <form>
+          <h2>Send Message</h2>
+          <div class="inputBox">
+            <input type="text" required="required">
+            <span>Full Name</span>
+          </div>
+          <div class="inputBox">
+            <input type="email" required="required">
+            <span>Email</span>
+          </div>
+          <div class="inputBox">
+            <input type="tel" required="required">
+            <span>Phone Number</span>
+          </div>
+          <div class="inputBox">
+            <input type="text" required="required">
+            <span>Subject</span>
+          </div>
+          <div class="inputBox">
+            <select required="required">
+              <option value="" disabled selected></option>
+              <option>Admissions</option>
+              <option>Academics</option>
+              <option>Placements</option>
+              <option>General Query</option>
+            </select>
+            <span>Department / Category</span>
+          </div>
+          <div class="inputBox">
+            <textarea required="required"></textarea>
+            <span>Type your Message...</span>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech School — Learn. Build. Launch.</title>
+  <meta name="description" content="An original, modern landing page template for a technology school. Single-file HTML/CSS/JS, responsive and accessible." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <input type="checkbox" id="mobileToggle" class="mobile-toggle-input" />
+    <input type="checkbox" id="themeToggle" class="theme-toggle" />
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true">
+          <img src="../media/logochitkara.jpeg" alt="Chitkara University Logo" style="width:100%;height:100%;object-fit:cover;border-radius:10px;" />
+        </span>
+        <span>Chitkara University</span>
+      </a>
+      <nav class="nav-menu" aria-label="Primary">
+        <a href="#programs">Programs</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact US</a>
+      </nav>
+      <div style="display:flex; gap:10px; align-items:center">
+        <label for="themeToggle" class="ghost theme-btn" aria-label="Toggle theme">🌗</label>
+        <a class="cta" href="Registration_Form.html">Apply Now</a>
+        <label for="mobileToggle" class="mobile-toggle" aria-controls="mobilePanel">Menu ▾</label>
+      </div>
+    </div>
+  <marquee class="styled-marquee" behavior="scroll" direction="left">
+   <span>Chitkara University - Where Innovation Meets Excellence</span>
+  </marquee>
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="programs.html">Programs</a>
+      <a href="curriculum.html">Curriculum</a>
+      <a href="mentors.html">Mentors</a>
+      <a href="outcomes.html">Outcomes</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </header>
+
+  <!-- Chitkara University Section -->
+  <div id="hero" class="container hero hero-section scroll-fade">
+    <div class="grid-2">
+      <div>
+        <h1 class="hero-title">
+          Explore Your Potential with <span class="chitkara-blue">CHITKARA UNIVERSITY</span>
+        </h1>
+        <p class="hero-lead">
+          Located just 30 km from Chandigarh, Chitkara University, ranked highly in prestigious national and global rankings, offers a world of learning to help you achieve your goals. Choose from industry-led programs, learn from outstanding faculty in state-of-the-art facilities, and access unlimited placement opportunities with over 2,000 campus recruiters. Join a vibrant community of students with ambitions as big as yours.
+        </p>
+        <div class="badge-grid">
+          <div class="badge-card naac">
+            <img src="../media/image.png" alt="NAAC A+" class="badge-img" />
+          </div>
+          <div class="badge-card nirf">
+            <img src="../media/ranking-nirf-desk.webp" alt="NIRF" class="badge-img" />
+          </div>
+          <div class="badge-card qs">
+            <img src="../media/ranking-qs-desk.webp" alt="QS World University Rankings" class="badge-img" />
+          </div>
+          <div class="badge-card the">
+            <img src="../media/ranking-the-desk.webp" alt="THE World University Rankings" class="badge-img" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gradient-card float" aria-label="Demo videos">
+          <div class="dash" aria-hidden="true"></div>
+          <div class="frame">
+            <div class="video-carousel" id="videoCarousel">
+              <!-- Video 1 -->
+              <video 
+                class="hero-video" 
+                muted 
+                loop 
+                autoplay
+                playsinline
+              >
+                <source src="../media/Screen Recording 2025-09-05 210625.mp4" type="video/mp4">
+              </video>
+              <!-- Video 2 -->
+              <video 
+                class="hero-video" 
+                muted 
+                loop 
+                playsinline
+              >
+                <source src="../media/Screen Recording 2025-09-05 210354.mp4" type="video/mp4">
+              </video>
+              <!-- Video 3 -->
+              <video 
+                class="hero-video" 
+                muted 
+                loop 
+                playsinline
+              >
+                <source src="../media/Screen Recording 2025-09-05 210625.mp4" type="video/mp4">
+              </video>
+              <!-- Indicators (decorative only) -->
+              <div class="video-indicators">
+                <div class="video-dot"></div>
+                <div class="video-dot"></div>
+                <div class="video-dot"></div>
+              </div>
+            </div>
+            <div class="video-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Programs -->
+  <section id="programs" class="scroll-fade">
+    <div class="container">
+      <h2 class="section-title">Discover Your Path to Success</h2>
+      <p class="section-lead">Choose a path and graduate with a portfolio of production-grade projects and interview-ready skills.</p>
+      <div class="program-slider-wrapper">
+        <div class="program-slider scroll-snap" id="programsSlider">
+          <div class="program-card" style="background-image:url('../media/cse.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="cse.html">Computer Science & Engineering<br>(CSE)</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/bsc.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="navy.html">BSC Nautical Science | Merchant Navy</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/bca.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="bca.html">BCA | BCA with AI ML | MCA</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/pharmacy.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="pharmacy.html">Pharmacy</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/business.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="business.html">Business Administration</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/hotel.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="hotel.html">Hotel Management</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/architecture.webp')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="architecture.html">School of Planning and Architecture</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/Fashion.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="fashion.html">Fashion Design</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/nursing.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="nursing.html">Nursing</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/optometry.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="opto.html">Optometry</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/physiotherapy.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="physio.html">Physiotherapy</a></div>
+          </div>
+          <div class="program-card" style="background-image:url('../media/journalism.jpg')">
+            <div class="program-card-overlay"></div>
+            <div class="program-card-title"><a href="journal.html">Journalism</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Curriculum -->
+  <section id="curriculum" class="scroll-fade">
+    <div class="container">
+      <h2 class="section-title">Global Dual Degree Programs</h2>
+      <p class="section-lead">Chitkara University's Global Dual Degree Programs, in collaboration with top institutions in the US, Canada, and Australia, provide students with world-class academic mentorship and international exposure, enabling them to earn degrees from both Chitkara University and prestigious global universities.
+</p>
+<br><br>
+<br>
+      <div id="curriculum-content">
+        <div class="university-carousel">
+          <div class="university-carousel-slide">
+            <div class="slide-container">
+              <div class="university-slide">
+                <img src="../media/univ1.webp" alt="Trent University" class="university-carousel-img" />
+                <div class="university-info trent-colors">
+                  <div class="university-logo">
+                    <img src="../media/trent.jpeg" alt="Trent University" class="logo-img large-logo" />
+                  </div>
+                  <div class="university-details">
+                    <h3>Bachelor of Business Administration</h3>
+                    <p>Earn a Business Administration degree from Trent University in Ontario, Canada. Academic mentorship program allows BBA students at Chitkara University to earn 100% credits and graduate with a Trent BBA degree in Canada.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="university-slide">
+                <img src="../media/univ2.webp" alt="Arizona State University" class="university-carousel-img" />
+                <div class="university-info arizona-colors">
+                  <div class="university-logo">
+                    <img src="../media/Arizona.png" alt="Arizona State University" class="logo-img large-logo" />
+                  </div>
+                  <div class="university-details">
+                    <h3>B.E. in Computer Science & Technology</h3>
+                    <p>Enroll in Chitkara University's B.E. in Computer Science and Technology. Study for the first 2 years in India and transfer to Arizona State University for 3rd & 4th years to obtain a prestigious Computer Science degree from ASU.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="university-slide">
+                <img src="../media/univ3.webp" alt="University 3" class="university-carousel-img" />
+                <div class="university-info university-3">
+                  <div class="university-logo">
+                    <img src="../media/univ3.webp" alt="Partner University" class="logo-img large-logo" />
+                  </div>
+                  <div class="university-details">
+                    <h3>Bachelor of Engineering</h3>
+                    <p>Experience world-class education with our dual degree program. Complete initial years at Chitkara and finish your degree at our prestigious international partner university.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="university-slide">
+                <img src="../media/univ4.webp" alt="Deakin University" class="university-carousel-img" />
+                <div class="university-info deakin-colors">
+                  <div class="university-logo">
+                    <img src="../media/deakin.png" alt="Deakin University" class="logo-img large-logo" />
+                  </div>
+                  <div class="university-details">
+                    <h3>Bachelor of Information Technology</h3>
+                    <p>Partner with Deakin University, Australia. Study for the first 2 years at Chitkara University and complete your final years at Deakin University to earn a globally recognized IT degree from one of Australia's top universities.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="university-slide">
+                <img src="../media/univ5.webp" alt="University 5" class="university-carousel-img" />
+                <div class="university-info university-5">
+                  <div class="university-logo">
+                    <img src="../media/univ5.webp" alt="Partner University" class="logo-img large-logo" />
+                  </div>
+                  <div class="university-details">
+                    <h3>Master of Business Administration</h3>
+                    <p>Advanced MBA program with international exposure. Begin your studies at Chitkara and complete specialization at our partner university for enhanced career prospects.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="university-slide">
+                <img src="../media/univ6.webp" alt="University 6" class="university-carousel-img" />
+                <div class="university-info university-6">
+                  <div class="university-logo">
+                    <img src="../media/univ6.webp" alt="Partner University" class="logo-img large-logo" />
+                  </div>
+                  <div class="university-details">
+                    <h3>Bachelor of Science</h3>
+                    <p>Comprehensive science education with global perspective. Start at Chitkara University and transition to our international partner for advanced studies and research opportunities.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="university-slide">
+                <img src="../media/univ7.webp" alt="University 7" class="university-carousel-img" />
+                <div class="university-info university-7">
+                  <div class="university-logo">
+                    <img src="../media/univ7.webp" alt="Partner University" class="logo-img large-logo" />
+                  </div>
+                  <div class="university-details">
+                    <h3>Bachelor of Arts</h3>
+                    <p>Liberal arts education with international dimension. Experience diverse academic culture by starting at Chitkara and completing your degree at our global partner institution.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Dot Indicators -->
+          <div class="carousel-indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+          </div>
+        </div>
+      </div>
+  </section>
+<br><br>
+<div class="marquee">
+    <div class="marquee-content">
+  <!-- First set of logos -->
+  <img src="../companies/logo_01.jpeg" alt="Logo 1" class="marquee-logo" />
+  <img src="../companies/logo_02.jpeg" alt="Logo 2" class="marquee-logo" />
+  <img src="../companies/logo_03.jpeg" alt="Logo 3" class="marquee-logo" />
+  <img src="../companies/logo_04.jpeg" alt="Logo 4" class="marquee-logo" />
+  <img src="../companies/logo_05.jpeg" alt="Logo 5" class="marquee-logo" />
+  <img src="../companies/logo_06.jpeg" alt="Logo 6" class="marquee-logo" />
+  <img src="../companies/logo_07.jpeg" alt="Logo 7" class="marquee-logo" />
+  <img src="../companies/logo_08.jpeg" alt="Logo 8" class="marquee-logo" />
+  <img src="../companies/logo_09.jpeg" alt="Logo 9" class="marquee-logo" />
+  <img src="../companies/logo_10.jpeg" alt="Logo 10" class="marquee-logo" />
+  <img src="../companies/logo_11.jpeg" alt="Logo 11" class="marquee-logo" />
+  <img src="../companies/logo_12.jpeg" alt="Logo 12" class="marquee-logo" />
+  <img src="../companies/logo_13.jpeg" alt="Logo 13" class="marquee-logo" />
+  <img src="../companies/logo_14.jpeg" alt="Logo 14" class="marquee-logo" />
+  <img src="../companies/logo_15.jpeg" alt="Logo 15" class="marquee-logo" />
+  <img src="../companies/logo_16.jpeg" alt="Logo 16" class="marquee-logo" />
+  <img src="../companies/logo_17.jpeg" alt="Logo 17" class="marquee-logo" />
+  <img src="../companies/logo_18.jpeg" alt="Logo 18" class="marquee-logo" />
+  <img src="../companies/logo_19.jpeg" alt="Logo 19" class="marquee-logo" />
+  <img src="../companies/logo_20.jpeg" alt="Logo 20" class="marquee-logo" />
+  <img src="../companies/logo_21.jpeg" alt="Logo 21" class="marquee-logo" />
+  <img src="../companies/logo_22.jpeg" alt="Logo 22" class="marquee-logo" />
+  <img src="../companies/logo_23.jpeg" alt="Logo 23" class="marquee-logo" />
+  <img src="../companies/logo_24.jpeg" alt="Logo 24" class="marquee-logo" />
+  <img src="../companies/logo_25.jpeg" alt="Logo 25" class="marquee-logo" />
+  <img src="../companies/logo_26.jpeg" alt="Logo 26" class="marquee-logo" />
+  <img src="../companies/logo_27.jpeg" alt="Logo 27" class="marquee-logo" />
+  <img src="../companies/logo_28.jpeg" alt="Logo 28" class="marquee-logo" />
+  <img src="../companies/logo_29.jpeg" alt="Logo 29" class="marquee-logo" />
+  <img src="../companies/logo_30.jpeg" alt="Logo 30" class="marquee-logo" />
+  <img src="../companies/logo_31.jpeg" alt="Logo 31" class="marquee-logo" />
+  <img src="../companies/logo_32.jpeg" alt="Logo 32" class="marquee-logo" />
+  
+  <!-- Duplicate set for seamless scrolling -->
+  <img src="../companies/logo_01.jpeg" alt="Logo 1" class="marquee-logo" />
+  <img src="../companies/logo_02.jpeg" alt="Logo 2" class="marquee-logo" />
+  <img src="../companies/logo_03.jpeg" alt="Logo 3" class="marquee-logo" />
+  <img src="../companies/logo_04.jpeg" alt="Logo 4" class="marquee-logo" />
+  <img src="../companies/logo_05.jpeg" alt="Logo 5" class="marquee-logo" />
+  <img src="../companies/logo_06.jpeg" alt="Logo 6" class="marquee-logo" />
+  <img src="../companies/logo_07.jpeg" alt="Logo 7" class="marquee-logo" />
+  <img src="../companies/logo_08.jpeg" alt="Logo 8" class="marquee-logo" />
+  <img src="../companies/logo_09.jpeg" alt="Logo 9" class="marquee-logo" />
+  <img src="../companies/logo_10.jpeg" alt="Logo 10" class="marquee-logo" />
+  <img src="../companies/logo_11.jpeg" alt="Logo 11" class="marquee-logo" />
+  <img src="../companies/logo_12.jpeg" alt="Logo 12" class="marquee-logo" />
+  <img src="../companies/logo_13.jpeg" alt="Logo 13" class="marquee-logo" />
+  <img src="../companies/logo_14.jpeg" alt="Logo 14" class="marquee-logo" />
+  <img src="../companies/logo_15.jpeg" alt="Logo 15" class="marquee-logo" />
+  <img src="../companies/logo_16.jpeg" alt="Logo 16" class="marquee-logo" />
+  <img src="../companies/logo_17.jpeg" alt="Logo 17" class="marquee-logo" />
+  <img src="../companies/logo_18.jpeg" alt="Logo 18" class="marquee-logo" />
+  <img src="../companies/logo_19.jpeg" alt="Logo 19" class="marquee-logo" />
+  <img src="../companies/logo_20.jpeg" alt="Logo 20" class="marquee-logo" />
+  <img src="../companies/logo_21.jpeg" alt="Logo 21" class="marquee-logo" />
+  <img src="../companies/logo_22.jpeg" alt="Logo 22" class="marquee-logo" />
+  <img src="../companies/logo_23.jpeg" alt="Logo 23" class="marquee-logo" />
+  <img src="../companies/logo_24.jpeg" alt="Logo 24" class="marquee-logo" />
+  <img src="../companies/logo_25.jpeg" alt="Logo 25" class="marquee-logo" />
+  <img src="../companies/logo_26.jpeg" alt="Logo 26" class="marquee-logo" />
+  <img src="../companies/logo_27.jpeg" alt="Logo 27" class="marquee-logo" />
+  <img src="../companies/logo_28.jpeg" alt="Logo 28" class="marquee-logo" />
+  <img src="../companies/logo_29.jpeg" alt="Logo 29" class="marquee-logo" />
+  <img src="../companies/logo_30.jpeg" alt="Logo 30" class="marquee-logo" />
+  <img src="../companies/logo_31.jpeg" alt="Logo 31" class="marquee-logo" />
+  <img src="../companies/logo_32.jpeg" alt="Logo 32" class="marquee-logo" />
+
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="scroll-fade">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <details>
+        <summary>What are the various courses offered by Chitkara University?</summary>
+        <p>Chitkara University offers a wide range of undergraduate and postgraduate programs in various fields such as Engineering, Management, Pharmacy, Nursing, and more. Please visit the official website for a complete list of courses. In order to view the detailed curriculum and course structure <b><i><a href="#programs" data-section="programs">Click Here</a></b></i>.</p>
+      </details>
+      <details>
+        <summary>What is the admission process for Chitkara University?</summary>
+        <p>The admission process typically involves filling out an application form, submitting required documents, and appearing for counseling, depending on the program. Detailed admission guidelines can be found on the university's admissions page.</p>
+      </details>
+      <details>
+        <summary>Can I apply for admission to a program in Chitkara University before the declaration of result of the qualifying exam?</summary>
+        <p>Yes, you can apply before the declaration of result of the qualifying exam for programs where admissions are done on the basis of marks. For all other courses, the proof of having passed the qualifying examination with requisite marks is to be submitted at the time of counselling/ admission.</p>
+      </details>
+      <details>
+        <summary>Can I receive admission on the basis of entrance test alone?</summary>
+        <p>Depending on the admission criteria, the admissions will be based on merit in the entrance test or marks in the qualifying examination. However, all candidates must fulfill the minimum eligibility requirements.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Apply / Footer -->
+  <section id="apply" class="scroll-fade">
+    <div class="container">
+      <div class="gradient-card">
+        <div class="dash" aria-hidden="true"></div>
+        <div class="frame" style="display:flex; flex-wrap:wrap; align-items:center; gap:16px; justify-content:space-between">
+          <div>
+            <h2 class="section-title" style="margin:0">Ready to start?</h2>
+            <p class="section-lead" style="margin:6px 0 0">Join the next cohort and build your career in tech.</p>
+          </div>
+          <form action="#" method="get" style="display:flex; gap:8px; flex-wrap:wrap">
+            <label class="hidden" for="email">Email</label>
+            <input id="email" type="email" required placeholder="you@example.com" style="padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.14); background:#0b1016; color:var(--text); min-width:260px" />
+            <button class="cta" type="submit">Get Invite</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <!-- Main Footer Content -->
+      <div class="footer-grid">
+        <!-- University Information -->
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="../media/logochitkara.jpeg" alt="Chitkara University Logo" />
+            <span>CHITKARA<br>UNIVERSITY</span>
+          </div>
+          <div class="university-info">
+            <h4>CHITKARA UNIVERSITY (PUNJAB)</h4>
+            <p>Chandigarh-Patiala National Highway<br>Punjab 140 401</p>
+            
+            <h4>CHITKARA INFORMATION CENTRE</h4>
+            <p>Unit No. A 201-202<br>Elante Mall Office Complex<br>Industrial Area Phase 1<br>Chandigarh 160 002</p>
+          </div>
+        </div>
+
+        <!-- Admissions Section -->
+        <div class="footer-section">
+          <h3>ADMISSIONS</h3>
+          <ul>
+            <li><a href="#">Downloadable Brochures</a></li>
+            <li><a href="#">Important Contact Numbers</a></li>
+            <li><a href="#">Application Form Sale Outlets</a></li>
+            <li><a href="#">Admission Procedure</a></li>
+            <li><a href="#">Fee Structure</a></li>
+            <li><a href="#">International Students</a></li>
+            <li><a href="#">Downloadable Forms & Formats</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Important Info Section -->
+        <div class="footer-section">
+          <h3>IMPORTANT INFO</h3>
+          <ul>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">NIRF Report</a></li>
+            <li><a href="#">National Academic Depository (NAD)</a></li>
+            <li><a href="#">University NAD Cell</a></li>
+            <li><a href="#">UGC Mandatory Disclosures</a></li>
+            <li><a href="#">www.vidyalakshmi.co.in</a></li>
+            <li><a href="#">Academic Bank of Credits (ABC)</a></li>
+            <li><a href="#">Request for Educational Verification</a></li>
+            <li><a href="#">RTI</a></li>
+            <li><a href="#">Agnipath Yojana</a></li>
+            <li><a href="#">Scholarship</a></li>
+            <li><a href="#">IQAC</a></li>
+            <li><a href="#">SWAYAM</a></li>
+          </ul>
+        </div>
+
+        <!-- Explore Section -->
+        <div class="footer-section">
+          <h3>EXPLORE</h3>
+          <ul>
+            <li><a href="#">Chitkara Educational Trust</a></li>
+            <li><a href="#">Chitkara University, Punjab</a></li>
+            <li><a href="#">Chitkara University, Himachal Pradesh</a></li>
+            <li><a href="#">Chitkara International School</a></li>
+            <li><a href="#">Chitkara Centre for Global Education</a></li>
+            <li><a href="#">Chitkara School of Hospitality with NCHMCT</a></li>
+            <li><a href="#">Office of International Affairs</a></li>
+            <li><a href="#">Career Advancement Services</a></li>
+            <li><a href="#">Chitkara Alumni Association Network</a></li>
+            <li><a href="#">Office of Students Affairs</a></li>
+            <li><a href="#">University Sports Board</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Initiatives for SDGs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="social-media">
+        <a href="#" class="social-icon facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon twitter" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-icon youtube" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          Copyright ©2025 Chitkara Educational Trust | 
+          <a href="#">Disclaimer</a> | 
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav" aria-label="Bottom Navigation">
+    <div class="bottom-nav-container">
+      <a href="#hero" data-section="hero">
+        <div class="bottom-nav-icon">🏠</div>
+        <div class="bottom-nav-text">Home</div>
+      </a>
+      <a href="#programs" data-section="programs">
+        <div class="bottom-nav-icon">🎯</div>
+        <div class="bottom-nav-text">Programs</div>
+      </a>
+      <a href="#curriculum" data-section="curriculum">
+        <div class="bottom-nav-icon">📚</div>
+        <div class="bottom-nav-text">Curriculum</div>
+      </a>
+      <a href="#outcomes" data-section="outcomes">
+        <div class="bottom-nav-icon">📊</div>
+        <div class="bottom-nav-text">Outcomes</div>
+      </a>
+      <a href="#faq" data-section="faq">
+        <div class="bottom-nav-icon">❓</div>
+        <div class="bottom-nav-text">FAQ</div>
+      </a>
+      <a href="Registration_Form.html" data-section="apply">
+        <div class="bottom-nav-icon">🚀</div>
+        <div class="bottom-nav-text">Apply</div>
+      </a>
+    </div>
+  </nav>
+  <script src="../js/home.js" defer></script>
+</body>
+</html>
